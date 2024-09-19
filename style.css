@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+.book-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.book-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.book-item h3 {
+    margin: 10px 0 5px;
+}
+
+.book-item p {
+    margin: 5px 0;
+}
+
+.book-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-item button:hover {
+    background-color: #0056b3;
+}
+
+.rewiews-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 250px
+}
+

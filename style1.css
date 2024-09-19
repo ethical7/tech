@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.home-side {
+    background-image: url("images/banner-image-bg-1.jpg");
+    border: 2px solid darkmagenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-div {
+    width: 100%;
+    width: 80px;
+    margin-right: 30px; 
+    border-radius: 30px;
+    /* Adjust as needed */
+}
+
+.ele {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.ele-div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bg1-div {
+    background-image: url("images/banner-image-bg-2.jpg");
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid darkorchid;
+    border-radius: 2px;
+}
+
+.orange-box {
+    border-top: 2px solid black;;
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url("images/banner-image-bg.jpg");
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.free-book-button{
+    width:150px;
+    height: 40px;
+    align-items: center;    
+    background-color: pink;
+    border-radius: 20px;
+    color: white;
+}
+
+.text-free-book{
+    text-align: center;
+}
+
+.cta {
+    border-top: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.cta h2{
+    margin-top: 30px;
+    color:rgb(255, 181, 168) ;
+    font-family: system-ui;
+    font-size: 40px;
+}
+
+.comments{
+    gap: 0;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.comment-child{
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.comment-child img{
+    padding: 20px 0px 10px 40px;
+    border-radius: 40px;
+    
+}
+.comment-child p{
+    padding: 10px 10px 10px 30px;
+}
+
+.features {
+    padding: 20px;
+}
+
+.feature {
+    margin: 10px 0;
+}
+
+.feature h3{
+    font-family: system-ui;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.feature p{
+    margin-top: 5px;
+    font-family: system-ui;
+    font-size: medium;
+}
+
+.features h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.feature-3div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.signup {
+    background-image: url("images/banner-image-bg-1.jpg");
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.signup input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.btn {
+    background-color: #007bff;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Freebook{
+    padding-top: 30px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .home-side {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ele {
+        justify-content: space-between;
+    }
+
+    .free-book {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature {
+        display: inline-block;
+        width: 30%; /* Three features in a row */
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
